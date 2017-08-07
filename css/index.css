@@ -1,0 +1,641 @@
+*{
+    padding:0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'SairaExtraCondensed-Bold';
+    src: url('../fonts/SairaExtraCondensed-Bold.ttf');
+}
+@font-face {
+    font-family:'SairaExtraCondensed-Bold';
+    src: url('../fonts/SairaExtraCondensed-Bold.ttf');
+}
+@font-face {
+    font-family: 'Merriweather-Regular';
+    src: url('../fonts/Merriweather-Regular.ttf');
+}
+@font-face {
+    font-family:'SairaCondensed-Regular';
+    src: url('../fonts/SairaCondensed-Regular.ttf');
+}
+.container{
+    max-width:1100px;
+    margin: 0 auto;
+}
+body{
+    box-sizing: border-box;
+}
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right: 35px;
+    display:none;
+    text-indent:-9999px;
+    background: url('../img/icon_top.png') no-repeat;
+}
+#title-background{
+    background-image: url("../img/peopleatwork.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#background-wusa{
+    background-image: url("../img/images2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#background-text-quote{
+    background: #3b3537;
+    margin-top: 60px;
+}
+#background-subscrib{
+    background-image: url("../img/forest.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+#background-contact{
+    background-image: url("../img/spaceman.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#footer-background{
+    background:#000;
+    padding: 40px;
+
+}
+#menu{
+    background: radial-gradient(circle at 1.98% 85.01%,#134E5E,transparent 100%),radial-gradient(circle at 98.02% 18.98%,#71B280,transparent 100%),radial-gradient(circle at 50% 50%,#0cc285,#0cc285 100%);
+    display: flex;
+    /*background: radial-gradient(circle at 1.98% 85.01%,rgb(123, 123, 123),transparent 100%),radial-gradient(circle at 98.02% 18.98%,#000000,transparent 100%),radial-gradient(circle at 50% 50%,#8d9492,#d7fff2 100%);*/
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#news{
+    margin-bottom: 60px;
+}
+.navbar-nav{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+}
+.li-menu{
+
+    transition: 1s;
+    cursor: pointer;
+}
+.text-menu-gamburger{
+    margin: 29px;
+}
+.li-menu:hover{
+    background: #fefefe;
+}
+.li-menu a{
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    padding: 15px;
+    margin: 0 10px;
+    color: #fefefe;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 1s;
+
+}
+#gamburger-menu{
+    display: none;
+ }
+#gamburger-menu span {
+    width: 28px;
+    height: 4px;
+    position: relative;
+    display: flex;
+    margin: 1px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    top: 3px;
+}
+.navbar-button{
+    background: rgba(255,195,174, .2);
+    cursor: pointer;
+    width: 45px;
+    border: 1px solid #fefefe;
+    height:40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35px;
+}
+.li-menu a:hover{
+    color: #000;
+}
+.header-text{
+    padding: 23%;
+}
+.header-text h1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    font-family:'SairaExtraCondensed-Bold';
+    font-size:72px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 25px black;
+}
+
+.text-contentc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.text-contentc h2{
+    font-size:45px;
+    font-family:sans-serif;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    text-shadow: 1px 1px 6px black;
+}
+.width-hr{
+    width:185px;
+    display: flex;
+    justify-content:center;
+    margin: 0 auto;
+
+}
+.steve-itm img{
+    width:100%;
+    margin-right: 49px;
+    border-radius: 22px;
+}
+/*Cricle*/
+.cricle{
+    width:45px;
+    height:45px;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 10px auto;
+    position: relative;
+}
+.cricle-steve{
+    width:45px;
+    height:45px;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 10px auto;
+    position: relative;
+}
+.decor-none-cricle {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 17px;
+}
+.arrow-center{
+    align-items: center;
+    display: flex;
+}
+/*Cricle*/
+.steve-itm{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 50px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.paragraph-text-style{
+    font-family:'SairaExtraCondensed-Bold', sans-serif;
+    font-size:21px;
+    vertical-align: middle;
+    text-align: justify;
+}
+.big-text{
+    font-weight:900;
+}
+.obama-itm{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 50px;
+    align-items: center;
+}
+.obama-itm img{
+    width:100%;
+    margin-left: 41px;
+    border-radius: 22px;
+    margin-bottom: 16px;
+}
+
+.text-over-mustache{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.text-over-mustache h2{
+    font-size: 40px;
+    font-family: fantasy;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #fff;
+    margin-top: 40px;
+    text-shadow: 1px 1px 25px black;
+
+}
+.list{
+    display: flex;
+    justify-content:center;
+    margin-top: 10px;
+    font-size:24px;
+    font-family: monospace;
+    font-weight:900;
+}
+.center-position{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 10px;
+}
+
+.list-article{
+    font-size:32px;
+    margin-top: 50px;
+}
+
+.paragraph-list{
+    color: #fefefe;
+}
+.list{
+    padding:15px;
+}
+.text-italic{
+    font-style: italic;
+}
+.text-decor-content{
+    font-size: 24px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 15px;
+    font-family: 'Merriweather-Regular';
+}
+
+.text-quote h2{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size:45px;
+    padding: 189px;
+    font-weight:300;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #d6d6d6;
+    justify-content:center;
+    font-family:'SairaCondensed-Regular', sans-serif;
+}
+
+.unbig-text{
+    font-size:16px;
+    margin-top: 25px;
+    color: #797778;
+    font-weight:900;
+}
+.text-subscrib{
+    padding:200px;
+}
+
+.text-subscrib h2{
+    font-family: serif;
+    font-size:44px;
+    text-transform: uppercase;
+    display: flex;
+    letter-spacing: 8px;
+    flex-wrap: wrap;
+    color: #b1b1b1;
+    justify-content:center;
+    text-shadow: 1px 1px 25px black;
+}
+.text-subscrib p{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    font-size:24px;
+    color:#b1b1b1;
+    font-weight:900;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.input-subscrib{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    text-align: center;
+    margin:0 10px ;
+    border-radius: 8px;
+    width:75px;
+    margin-bottom: 25px;
+    background: #fefefe;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.input-subscrib-button{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    text-align: center;
+    margin:0 10px ;
+    border-radius: 8px;
+    width:75px;
+    margin-bottom: 25px;
+    background: #fefefe;
+    cursor: pointer;
+    transition: 1.5s;
+}
+#form-subscribe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.subscribe-width{
+    width:500px;
+    height:25px;
+    border-radius: 8px;
+    background: #fefefe;
+    cursor:text ;
+    transition: 1.5s;
+}
+.subscribe-width:hover{
+    background: lemonchiffon;
+}
+.input-subscrib:hover{
+    background: lemonchiffon;
+}
+.contact h3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    font-size:55px;
+    padding-top: 100px;
+}
+#contact-form{
+    margin-top: 25px;
+    padding: 162px;
+}
+.input-center-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 0 auto;
+}
+textarea{
+    resize: none;
+}
+.contact-width{
+    margin-bottom: 25px;
+    border-radius: 8px;
+    background: papayawhip;
+    width: 100%;
+    height:30px;
+}
+#button-style{
+    background: khaki;
+    width:150px;
+    height: 25px;
+    border-radius: 8px;
+    border: 1px solid khaki;
+    cursor: pointer;
+}
+.footer-text h2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    color: #fefefe;
+}
+.width-min-hr{
+    width: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.icon-itm{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 10px 15px;
+    justify-content: space-between;
+}
+.icon-itm a{
+    color: white;
+}
+.icon-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon-itm a:hover{
+    color: indianred;
+}
+
+
+@media screen and (max-width: 975px){
+    .header-text h1{
+        text-align: center;
+    }
+    #width-text-article{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .paragraph-list{
+        text-align: center;
+    }
+    .steve-itm{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .obama-itm{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .text-quote h2{
+        font-size: 40px;
+        padding: 100px;
+    }
+    .input-subscrib-button{
+        width:150px;
+        height:35px;
+    }
+    .text-subscrib h2{
+        color: #000;
+        text-align: center;
+    }
+    .text-subscrib p{
+        color: #000;
+        text-align: center;
+    }
+    .input-subscrib{
+        width: 355px;
+        height: 35px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .navbar-nav{
+        display: none;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        top: 60px;
+    }
+    #gamburger-menu{
+        width:100%;
+        height: 60px;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        background: radial-gradient(circle at 1.98% 85.01%,#134E5E,transparent 100%),radial-gradient(circle at 98.02% 18.98%,#71B280,transparent 100%),radial-gradient(circle at 50% 50%,#0cc285,#0cc285 100%);
+
+
+    }
+    .steve-itm{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .obama-itm{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .paragraph-text-style{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .steve-itm img{
+        width:75%;
+        margin: 0 auto;
+    }
+    .obama-itm img{
+        width: 75%;
+       border-radius: 22px;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    #width-text-article{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .list{
+        text-align: center;
+    }
+    .text-over-mustache{
+        text-align: center;
+    }
+    .text-decor-content{
+        font-size:16px;
+    }
+    .text-subscrib h2{
+        color: #000;
+        text-align: center;
+    }
+    .text-subscrib p{
+        color: #000;
+        text-align: center;
+    }
+    .input-subscrib{
+        width: 355px;
+        height: 35px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .text-subscrib{
+        padding: 80px;
+    }
+    #background-subscrib{
+        background-attachment: inherit;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    #title-background{
+        height: 100vh;
+    }
+    .scrollup{
+        right: 5px;
+    }
+    .obama-itm img{
+       margin: 10px auto;
+    }
+    .header-text{
+        padding: 50%;
+    }
+    .header-text h1{
+        font-size: 14vmin;
+        text-align: center;
+    }
+    #width-text-article{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    #width-text-article{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .paragraph-text-style{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .text-quote h2 {
+        font-size: 26px;
+        padding: 90px;
+    }
+    #contact-form{
+        padding: 100px;
+    }
+}
+@media screen and (max-width: 450px){
+    .paragraph-text-style {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    #width-text-article {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 410px){
+    .text-subscrib {
+        padding: 50px;
+    }
+    .text-subscrib h2{
+        font-size: 42px;
+    }
+    #contact-form{
+        padding:50px;
+    }
+}
+@media screen and (max-width: 391px) {
+    .text-subscrib h2 {
+        font-size: 29px;
+    }
+    .paragraph-text-style {
+        max-width: 211px;
+        margin: 0 auto;
+    }
+    #width-text-article{
+        max-width: 213px;
+        margin: 0 auto;
+    }
+}
